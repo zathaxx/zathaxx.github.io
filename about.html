@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-</head>
-
-<body onload="startTime()">
-
-<div id="txt"></div>
-
+<title>Zath's Website</title>
+	<link rel="icon" href="okhand.png" type="image/png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		font-family: arial;
+	}
+	h1 {
+		color: white;
+		font-size: 50px;
+	}
+	.green {
+		color: green
+	}
+	.firstParagraph {
+		color: orange;
+		font-size: 20px;
+	}
+	.arial {
+		font-family: arial
+	}
+	.upperRIght {
+		position: absolute;
+		top: 85px;
+		right: 0;
+	}
+	.space {
+		margin: 0;
+		padding: 0;
+		color: white
+	}
+	body {
+		background-image: url("jpg.jpg");
+	}
+	.about {
+		color: white
+	}
+	.banner {
+		width: 100%;
+		height: 70px;
+		background-color: DodgerBlue;
+	}
+	</style>  
 </body>
+<div class="banner">
+	   Maybe some links can go here
+	</div>
 </html>
